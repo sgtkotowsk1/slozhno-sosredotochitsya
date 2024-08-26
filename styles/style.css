@@ -1,5 +1,115 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--main-font, "IBM Plex mono", monospace);
+  font-size: var(--main-font-size);
+  background-color: var(--background-color);
+  line-height: 23.4px;
+  background-image: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::after {
+  content: "";
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--border-color);
+  border-inline-end: 1px solid var(--border-color);
+  position: absolute;
+  inset-block-start: var(--padding);
+  inset-inline-end: var(--padding);
+}
+
+.decorated-zone::before {
+  content: "";
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: 1px solid var(--border-color);
+  border-inline-start: 1px solid var(--border-color);
+  position: absolute;
+  inset-block-end: var(--padding);
+  inset-inline-start: var(--padding);
+}
+
+.header {
+  min-block-size: 668px;
+  display: grid;
+  padding: var(--padding);
+  align-items: start;
+}
+
+.header__rec {
+  justify-self: flex-end;
+  margin-inline-end: 10px;
+}
+
+.header__rec::before {
+  content: "rec";
+  color: var(--background-text-color, #FF0070);
+  text-transform: uppercase;
+  line-height: 25px;
+  margin-inline-end: 10px;
+}
+
+.header__rec::after {
+  content: "";
+  display: inline-block;
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: #FF0070;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px var(--header-shadow-color, #FF0070);
+}
+
+.header__theme-menu {
+  justify-self: flex-end;
+  margin-block: 65px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 1.5px 13px;
+  color: var(--question-color, #FF0070);
+  text-transform: lowercase;
+}
+
+.header__theme-menu-item .header__theme-menu-button_active {
+  border: 1px solid var(--border-color, #FF0070);
+}
+
+.title-decor {
+  line-height: 23.4px;
+  font-weight: 700;
+  background-color: var(--background-header-color, #FF0070);
+}
+
+.header__text {
+  color: var(--header-text-color, #00002B);
+  background-color: var(--background-header-color, #FF0070);
+  margin-block: 55px;
+  font-weight: 700;
+  justify-self: flex-end;
+  inline-size: clamp(355px, calc(100% / 2 - 5px), 491px);
+}
+
+
+.header__title {
+  font-size: clamp(7.25rem, 6.317vw + 5.769rem, 9.813rem);
+  color: var(--header-color);
+  text-shadow: 4px 4px 0 var(--header-shadow-color, #FF0070);
+  line-height: clamp(95.7px, 5.239vw + 4.71rem, 129.53px);
+  justify-self: flex-start;
 }
