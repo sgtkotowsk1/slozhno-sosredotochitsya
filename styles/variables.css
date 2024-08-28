@@ -3,17 +3,42 @@
   и их переопределение под различные устройства
 */
 
-
 :root {
-  --header-text-color: #00002B;
-  --pink-text-color: #FF0070;
-  --border-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --background-color: #00002B;
-  --background-header-color: #ff0070;
-  --header-color: #DB00FF;
-  --text-shadow-color: #FF0070;
-  --main-font: "IBM Plex mono";
-  --main-font-size: 18px;
+  --pink-color-1: #F1B2CE;
+  --pink-color-2: #FFF1fF;
+  --pink-color-3: #FFC2E6;
+  --pink-color-4: #FF8DCB;
+
+  --purple-color-1: #DB00FF;
+  --purple-color-2: #FF0070;
+
+  --black-color-1: #000028;
+  --black-color-2: #353430;
+
+  --main-font: "IBM Plex mono", monospace;
+  --main-text-color: var(--pink-color-1, #F1B2CE);
   --background-image: url("../images/cover-image.png");
+  --header-title-color: var(--purple-color-1, #DB00FF);
+  --header-color: var(--black-color-1, #000028);
+  --header-background-color: var(--purple-color-2, #FF0070);
+  --question-color: var(--purple-color-2, #FF0070);
+  --header-menu-color: var(--purple-color-2, #FF0070);
+  --text-shadow-color: var(--purple-color-2, #FF0070);
+  --background-color: var(--black-color-1, #000028);
+  --rec-visible: visible;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

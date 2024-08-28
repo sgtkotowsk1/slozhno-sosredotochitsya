@@ -1,12 +1,13 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-font: "IBM Plex mono", monospace;
+  --main-text-color: var(--pink-color-1, #F1B2CE);
+  --background-image: url("../images/cover-image-dark.png");
+  --header-title-color: var(--purple-color-1, #DB00FF);
+  --header-color: var(--black-color-1, #000028);
+  --header-background-color: var(--purple-color-2, #FF0070);
+  --question-color: var(--purple-color-2, #FF0070);
+  --header-menu-color: var(--purple-color-2, #FF0070);
+  --text-shadow-color: var(--purple-color-2, #FF0070);
+  --background-color: var(--black-color-1, #000028);
+  --rec-visible: visible;
 }

@@ -1,12 +1,35 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+.footer .site-title {
+  text-shadow: 2px 2px 0 var( --purple-color-2, #FF0070);
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-font: "IBM Plex mono", monospace;
+  --main-text-color: var(--black-color-2, #353430);
+  --background-image: url("../images/cover-image-light.png");
+  --header-title-color: var(--pink-color-3, #FFC2E6);
+  --header-color: var(--black-color-2, #353430);
+  --header-background-color: var(--pink-color-4, #FF8DCB);
+  --question-color: var(--black-color-, #353430);
+  --header-menu-color: var(--black-color-, #353430);
+  --text-shadow-color: var(--pink-color-4, #FF8DCB);
+  --background-color: var(--pink-color-2, #FFF1F7);
+  --rec-visible: hidden;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+:root {
+  --main-font: "IBM Plex mono", monospace;
+  --main-text-color: var(--black-color-2, #353430);
+  --background-image: url("../images/cover-image-light.png");
+  --header-title-color: var(--pink-color-3, #FFC2E6);
+  --header-color: var(--black-color-2, #353430);
+  --header-background-color: var(--pink-color-4, #FF8DCB);
+  --question-color: var(--black-color-, #353430);
+  --header-menu-color: var(--black-color-, #353430);
+  --text-shadow-color: var(--pink-color-4, #FF8DCB);
+  --background-color: var(--pink-color-2, #FFF1F7);
+  --rec-visible: hidden;     
+  }
 }
