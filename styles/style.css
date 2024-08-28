@@ -97,7 +97,7 @@
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
-  padding: 1.5px 13px;
+  padding: 1px 12px;
   color: var(--question-color, #FF0070);
   text-transform: lowercase;
 }
