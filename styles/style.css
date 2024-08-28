@@ -12,6 +12,7 @@
   background-size: cover;
   background-attachment: fixed;
   font-size: 18px;
+  max-inline-size: 1024px;
 }
 
 .text_shadow {
@@ -97,7 +98,7 @@
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
-  padding: 1px 12px;
+  padding: 1.5px 12px;
   color: var(--question-color, #FF0070);
   text-transform: lowercase;
 }
@@ -141,8 +142,7 @@
 }
 
 .section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
 }
 
@@ -169,6 +169,10 @@
   margin-block-end: 10px;
 }
 
+.gallery {
+  margin-block-end: 30px;
+}
+
 .external_link {
   text-decoration: none;
 }
@@ -184,11 +188,14 @@
 .gallery__list {
   display: grid;
   gap: 10px;
+  
 }
 
 .footer {
   block-size: 100vh;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
+  display: grid;
 }
 
 
@@ -199,17 +206,63 @@
 
 
 @media (min-width: 768px) {
+
   .header {
-    padding-inline-start: 0px;
+    padding-inline-start: 0;
+    margin-block-end: 40px;
   }
 
   .header__text {
     justify-self: flex-end;
   }
   
+  .section:nth-of-type(2n+1) {
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .section__title_question {
+    inline-size: 236px;
+  }
+  
+  .main {
+    gap: 80px;
+  }
+
+  .sunset {
+    grid-area: sunset;
+  }
+
+  .ice-cream {
+    grid-area: ice-cream;
+  }
+
+  .tape {
+    grid-area: tape;
+  }
+
+  .books {
+    grid-area: books;
+  }
+
+  .street {
+    grid-area: street;
+  }
+
+  .gallery__list {
+    display: grid;
+    margin-block-start: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "sunset sunset ice-cream"
+    "tape book ice-cream"
+    "tape street street"; 
+  }
+
 }
 
 @media (min-width: 1024px) {
+
   .header__theme-menu-list {
     flex-direction: row;
   }
