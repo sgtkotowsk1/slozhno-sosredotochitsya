@@ -186,7 +186,7 @@
 }
 
 .external_link:hover {
-  text-decoration: underline;
+  border-block-end: 1px solid currentColor;
 }
 
 .external_link:focus {
