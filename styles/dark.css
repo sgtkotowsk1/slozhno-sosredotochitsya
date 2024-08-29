@@ -1,13 +1,14 @@
 .page.theme_dark {
   --main-font: "IBM Plex mono", monospace;
-  --main-text-color: var(--pink-color-1, #F1B2CE);
+  --main-text-color: var(--pink-color-1, #f1b2ce);
   --background-image: url("../images/cover-image-dark.png");
-  --header-title-color: var(--purple-color-1, #DB00FF);
+  --header-title-color: var(--purple-color-1, #db00ff);
   --header-color: var(--black-color-1, #000028);
-  --header-background-color: var(--purple-color-2, #FF0070);
-  --question-color: var(--purple-color-2, #FF0070);
-  --header-menu-color: var(--purple-color-2, #FF0070);
-  --text-shadow-color: var(--purple-color-2, #FF0070);
+  --header-background-color: var(--purple-color-2, #ff0070);
+  --question-color: var(--purple-color-2, #ff0070);
+  --header-menu-color: var(--purple-color-2, #ff0070);
+  --text-shadow-color: var(--purple-color-2, #ff0070);
   --background-color: var(--black-color-1, #000028);
+  --hover-border-color: var(--pink-color-40op, #ff007040);
   --rec-visible: visible;
 }

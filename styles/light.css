@@ -1,35 +1,35 @@
 .footer .site-title {
-  text-shadow: 2px 2px 0 var( --purple-color-2, #FF0070);
+  text-shadow: 2px 2px 0 var(--purple-color-2, #ff0070);
 }
 
 .page.theme_light {
   --main-font: "IBM Plex mono", monospace;
   --main-text-color: var(--black-color-2, #353430);
   --background-image: url("../images/cover-image-light.png");
-  --header-title-color: var(--pink-color-3, #FFC2E6);
+  --header-title-color: var(--pink-color-3, #ffc2e6);
   --header-color: var(--black-color-2, #353430);
-  --header-background-color: var(--pink-color-4, #FF8DCB);
+  --header-background-color: var(--pink-color-4, #ff8dcb);
   --question-color: var(--black-color-, #353430);
   --header-menu-color: var(--black-color-, #353430);
-  --text-shadow-color: var(--pink-color-4, #FF8DCB);
-  --background-color: var(--pink-color-2, #FFF1F7);
+  --text-shadow-color: var(--pink-color-4, #ff8dcb);
+  --background-color: var(--pink-color-2, #fff1f7);
+  --hover-border-color: var(--black-color-40op, #32312d40);
   --rec-visible: hidden;
 }
 
-
-
 @media (prefers-color-scheme: light) {
-:root {
-  --main-font: "IBM Plex mono", monospace;
-  --main-text-color: var(--black-color-2, #353430);
-  --background-image: url("../images/cover-image-light.png");
-  --header-title-color: var(--pink-color-3, #FFC2E6);
-  --header-color: var(--black-color-2, #353430);
-  --header-background-color: var(--pink-color-4, #FF8DCB);
-  --question-color: var(--black-color-, #353430);
-  --header-menu-color: var(--black-color-, #353430);
-  --text-shadow-color: var(--pink-color-4, #FF8DCB);
-  --background-color: var(--pink-color-2, #FFF1F7);
-  --rec-visible: hidden;     
+  :root {
+    --main-font: "IBM Plex mono", monospace;
+    --main-text-color: var(--black-color-2, #353430);
+    --background-image: url("../images/cover-image-light.png");
+    --header-title-color: var(--pink-color-3, #ffc2e6);
+    --header-color: var(--black-color-2, #353430);
+    --header-background-color: var(--pink-color-4, #ff8dcb);
+    --question-color: var(--black-color-, #353430);
+    --header-menu-color: var(--black-color-, #353430);
+    --text-shadow-color: var(--pink-color-4, #ff8dcb);
+    --background-color: var(--pink-color-2, #fff1f7);
+    --hover-border-color: var(--black-color-40op, #32312d40);
+    --rec-visible: hidden;
   }
 }
